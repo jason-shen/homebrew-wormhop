@@ -3,28 +3,28 @@
 class Wormhop < Formula
   desc "HTTP, TCP and UDP tunnels for local services, with a QUIC fast path"
   homepage "https://wormhop.dev"
-  version "0.1.9"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.1.9/wormhop-aarch64-apple-darwin.tar.gz"
-      sha256 "50302c051203998913610ecd7a0bec997a331bb003590d2e925d7a1151d999d8"
+      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.0/wormhop-aarch64-apple-darwin.tar.gz"
+      sha256 "1f8baae023641c939a9ab68f06929ebc2897af8c55fe5cd5383b67a96a3280cb"
     end
     on_intel do
-      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.1.9/wormhop-x86_64-apple-darwin.tar.gz"
-      sha256 "e39b5f8649aaa0116e33580abe705dbdaa82353daf0df6f68f7e273d84526da1"
+      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.0/wormhop-x86_64-apple-darwin.tar.gz"
+      sha256 "baf4c8a5a8abb726bdb166c9741ed6e96593fa164e732c16de05f79013332ef7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.1.9/wormhop-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "a135a940180fa618d81d84055166b6dd409dcc5d7d56e7016680b0b7e9c580c3"
+      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.0/wormhop-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "9c7ca722ed5d2fabe1a192a75d1e78ad07ae0758e9616d4fb4551389a53b1702"
     end
     on_intel do
-      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.1.9/wormhop-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "8dd9ca5cc03b44e1b5f425c78ddb220bde6bf8c42a4e74c78d7a832fce3e7c55"
+      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.0/wormhop-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "dcead9996d9b76fa6f47405c29a97e67cca91eaa6028f347a8d1f7c8211dd8c6"
     end
   end
 
@@ -37,6 +37,9 @@ class Wormhop < Formula
       Create an authtoken at https://wormhop.dev/dashboard/tokens, then:
         wormhop authtoken <token> --server tunnel.wormhop.dev
         wormhop http 3000
+
+      To keep the tunnels in ~/.config/wormhop/wormhop.toml running in the background:
+        wormhop service install
     TEXT
   end
 
