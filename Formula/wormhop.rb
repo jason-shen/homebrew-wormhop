@@ -3,28 +3,28 @@
 class Wormhop < Formula
   desc "HTTP, TCP and UDP tunnels for local services, with a QUIC fast path"
   homepage "https://wormhop.dev"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.0/wormhop-aarch64-apple-darwin.tar.gz"
-      sha256 "1f8baae023641c939a9ab68f06929ebc2897af8c55fe5cd5383b67a96a3280cb"
+      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.1/wormhop-aarch64-apple-darwin.tar.gz"
+      sha256 "f0105479507c8e5e1d0c9f2fb8e3ebdf260bf5f4884b3c6ed2a0c86fa6827ca9"
     end
     on_intel do
-      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.0/wormhop-x86_64-apple-darwin.tar.gz"
-      sha256 "baf4c8a5a8abb726bdb166c9741ed6e96593fa164e732c16de05f79013332ef7"
+      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.1/wormhop-x86_64-apple-darwin.tar.gz"
+      sha256 "21ece7ec86a2369dd692e8fe2e8c4521f2fc64114fb17ff5cf12b20fe459995e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.0/wormhop-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "9c7ca722ed5d2fabe1a192a75d1e78ad07ae0758e9616d4fb4551389a53b1702"
+      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.1/wormhop-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "80303e592a5f3c792b38a4815bbf31c9dae16da7c023dd90af70cd1004592953"
     end
     on_intel do
-      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.0/wormhop-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "dcead9996d9b76fa6f47405c29a97e67cca91eaa6028f347a8d1f7c8211dd8c6"
+      url "https://github.com/jason-shen/wormhop-releases/releases/download/v0.2.1/wormhop-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "81faef9b4b5e96662cd587b7b3960c349d2e8479c5a5d0567ca45c45934c64d1"
     end
   end
 
